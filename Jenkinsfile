@@ -71,7 +71,7 @@ pipeline {
             }
         }
 
-        stage('Deploy to ' + params.ENV_TARGET) {
+        stage('Deploy') {
             when { expression { env.SKIP_DEPLOY != "true" } }
             steps {
                 echo "Deploying ${params.APP_NAME} to ${params.ENV_TARGET} on port ${env.APP_PORT}"
