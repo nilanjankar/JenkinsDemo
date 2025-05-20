@@ -1,0 +1,9 @@
+skipTests: false
+skipDeploy: false
+port: 3001
+envRoutes:
+  staging:
+    - us-east-1
+    - eu-west-1
+  prod:
+    - us-west-2
